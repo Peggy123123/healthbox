@@ -1,57 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+<html lang="zh-Hant-TW">
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>eat 起來</title>
+  <%- include('./layout/meta') -%>
+  <%- include('./layout/font') -%>
+</head>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+<body>
+  <div class="container">
+    <div class="row">
+      <%- include('./layout/header'); -%>
+
+    </div>
+  </div>
+  <section class="banner">
+    <div class="swiper heroSwiper h-100">
+      <div class="swiper-wrapper h-100">
+        <div class="swiper-slide">
+          <img class="desktop-img" src="../assets/images/hero1-lg.png" alt="">
+          <img class="mobile-img" src="../assets/images/hero1-sm.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/images/hero2.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/images/hero3.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <div class="eat-img pt-s-3 pt-lg-s-5 text-end mb-s-15 mb-lg-s-30">
+    <img class="h-lg-140 h-28 d-inline-block" src="../assets/images/logomark & text.png" alt="">
+  </div>
+  <section class="special pb-s-15 pb-lg-s-37 bg-secondary-light">
+    <div class="container position-relative z-2000">
+      <img class="w-123 w-lg-349 position-absolute top-0 start-0 translate-middle-y mb-lg-s-10 ms-s-11 ms-lg-s-0" src="../assets/images/title-eat 起來.png" alt="">
+      <div class="row position-relative pt-s-15 pt-lg-s-30 mb-s-8 mb-lg-s-20">
+        <h3 class="text-center">
+          <span class="line title">特</span>
+          <span class="line title">製</span>
+          <span class="line title">餐</span>
+          <span class="line title">點</span>
+        </h3>
+      </div>
+      <div class="row align-items-center h-306 h-lg-407">
+        <div class="col-2 col-lg-1 d-flex justify-content-center">
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="col-8 col-lg-10">
+          <div class="swiper specialSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/bento 1.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">雞肉機器雞胸肉燕麥餐</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 230 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/bento 2.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">力量泉源牛肉糙米餐</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 240 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/bento 3.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">活力充沛豬柳燕麥</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 250 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/bento 4.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">堅韌鬥士烤雞全穀餐</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 230 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/bento 1.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">雞肉機器雞胸肉燕麥餐</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 230 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/bento 2.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">力量泉源牛肉糙米餐</h5>
+                    <p class="fsw-5 text-primary mb-lg-2 mb-0">NT$ 240 </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 col-lg-1 d-flex justify-content-center">
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="text-center mt-s-6 mt-lg-s-15">
+      <a href="" class="btn py-s-6 px-s-20 btn-primary fsw-4 rounded-3 text-white">訂起來</a>
+    </div>
+  </section>
+  <section class="scroll-animate-group">
+    <div class="scroll-animate position-relative">
+      <img data-aos="fade-up-right" src="../assets/images/blob image1.png" alt="">
+      <img data-aos="fade-up-left" src="../assets/images/blob image2.png" alt="">
+      <img data-aos="fade-up-right" src="../assets/images/blob image3.png" alt="">
+      <img src="../assets/images/blob color1.png" alt="">
+      <img src="../assets/images/blob color2.png" alt="">
+      <img src="../assets/images/blob color3.png" alt="">
+      <img data-aos="zoom-in" src="../assets/images/plant1.png" alt="">
+      <img data-aos="zoom-in" src="../assets/images/plant2.png" alt="">
+      <img data-aos="zoom-in" src="../assets/images/plant3.png" alt="">
+      <img src="../assets/images/line 1.png" alt="">
+      <img src="../assets/images/line 2.png" alt="">
+    </div>
+  </section>
+  <section class="buy-together bg-black-200 pb-s-15 pb-lg-s-37">
+    <div class="container position-relative">
+      <img class="w-123 w-lg-349 position-absolute top-0 start-0 translate-middle-y mb-lg-s-10 ms-s-11 ms-lg-s-0" src="../assets/images/title-buy 起來.png" alt="">
+      <div class="row position-relative pt-s-15 pt-lg-s-30 mb-s-8 mb-lg-s-20">
+        <h3 class="text-center">
+          <span class="line title">健</span>
+          <span class="line title">康</span>
+          <span class="line title">超</span>
+          <span class="line title">市</span>
+        </h3>
+      </div>
+      <div class="row align-items-center h-306 h-lg-407">
+        <div class="col-2 col-lg-1 d-flex justify-content-center">
+          <div class="buy-swiper-button-prev"></div>
+        </div>
+        <div class="col-8 col-lg-10">
+          <div class="swiper buySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/super market1.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">肌力餐體驗組</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 950 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/super market2.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">素食植物蛋白組</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 950 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/super market4.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">減脂餐體驗組</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 950 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/super market3.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">減脂餐體驗組</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 230 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/super market1.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">肌力餐體驗組</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 950 </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-transparent border-0">
+                  <img src="../assets/images/super market2.png" class="card-img-top" alt="...">
+                  <div class="card-body text-start pt-s-5 pb-s-2">
+                    <h5 class="fsw-4 mb-lg-4">素食植物蛋白組</h5>
+                    <p class="fsw-5 text-primary mb-2">NT$ 950 </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+        <div class="col-2 col-lg-1 d-flex justify-content-center">
+          <div class="buy-swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-s-6 mt-lg-s-15">
+      <a href="" class="btn py-s-6 px-s-20 btn-primary fsw-4 rounded-3 text-white">訂起來</a>
+    </div>
+  </section>
+  <section class="customer-testimonials py-lg-s-30 py-s-15">
+    <div class="container">
+      <div class="row justify-content-center position-relative">
+        <h3 class="text-center mb-s-8 mb-lg-s-20">
+          <span class="line title">顧</span>
+          <span class="line title">客</span>
+          <span class="line title">好</span>
+          <span class="line title">評</span>
+        </h3>
+
+        <div class="col-lg-4 mb-s-5 mb-lg-s-0">
+          <div class="card h-100 shadow border-0">
+            <img src="../assets/images/feedback1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex flex-column h-100">
+                <div class="d-flex mb-s-1">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                </div>
+                <p class="fsw-6 flex-grow-1">難得吃到有質感的健康便當！多樣性口味天天吃都不膩</p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img class="rounded-fill" width="32" src="../assets/images/avatar1.png" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-s-3 text-black-700">
+                    中山地頭蛇
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-s-5 mb-lg-s-0">
+          <div class="card h-100 shadow border-0">
+            <img src="../assets/images/feedback2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex flex-column h-100">
+                <div class="d-flex mb-s-1">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                </div>
+                <p class="fsw-6 flex-grow-1">中午午休吃餐盒，晚上買健康超市即時餐天天都吃不膩～</p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img class="rounded-fill" width="32" src="../assets/images/avatar2.png" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-s-3 text-black-700">
+                    Alisha
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-s-5 mb-lg-s-0">
+          <div class="card h-100 shadow border-0">
+            <img src="../assets/images/feedback3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex flex-column h-100">
+                <div class="d-flex mb-s-1">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                  <img class="me-2px" src="../assets/images/star filled.png" alt="">
+                </div>
+                <p class="fsw-6 flex-grow-1">可以揪團訂餐超方便 免去上班族每天的煩惱～</p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img class="rounded-fill" width="32" src="../assets/images/avatar3.png" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-s-3 text-black-700">
+                    丁丁
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <footer class="bg-secondary-light py-s-15 py-lg-s-20">
+    <div class="container">
+      <%- include('./layout/footer'); -%>
+    </div>
+  </footer>
 
-    <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="../main.js"></script>
+  <script type="module" src="../assets/js/index.js"></script>
+  <script>
+
+  </script>
+</body>
+
 </html>

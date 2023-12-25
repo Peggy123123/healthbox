@@ -1,0 +1,222 @@
+//Banner
+.banner-img {
+    background-image: url(../images/listBanner.jpeg);
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100% ;
+    height: 200px;
+    
+};
+
+.searchbar {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) { 
+    .banner-img {
+        height: 250px;
+    }
+    .searchbar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .foodClass-sm {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) { 
+    .banner-img {
+        height: 300px;
+    }
+
+    .searchbar {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) { 
+    .foodClass-lg {
+        display: none !important;
+    }
+}
+
+//電腦版食物輪播預設隱藏
+.swiper-food {
+    display: none;
+}
+
+//餐盒標籤
+.tag {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #E07507;
+    border-radius: 10px;
+}
+
+//Navigation arrows 上下至中
+.swiper-button-next,.swiper-button-prev {
+    top:50%
+}
+
+@media (min-width: 768px){
+    .swiper-food {
+        display: block;
+    }
+    .food-card-sm {
+        display: none;
+    }
+    .tag {
+        left: 30px;
+    }
+}
+
+//電腦版選擇門市按鈕
+.select-btn-lg {
+    display: block;
+    position: absolute;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 120px;
+    height: 120px;
+    background-color: #E07507;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    z-index: 10;
+    text-decoration: none;
+    &:hover {
+        background-color :#F4E4B7;
+        color: #E07507;
+    }
+}
+
+//購物車彈窗
+.add-cart-box {
+    width: 400px;
+    height: 100%;
+    background-color:#F4E4B7;
+    position: absolute;
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+//切換開關
+.btn-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 20px;
+    border-radius: 100px;
+    box-shadow: 0px 3px 0px rgba(0,0,0,.13) inset;
+    // background-color: #ccc;
+}
+
+.btn-box-personal {
+    background-color: #ccc;
+}
+
+.btn-box-group {
+    background-color: #E07507;
+}
+
+.btn-box .circle-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:1px 2px 5px rgba(0,0,0,.3);
+}
+
+.circle-btn-personal {
+    margin-left: -20px;
+    transition: 0.2s;
+}
+
+.circle-btn-group {
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    &:checked + .btn-box-personal  {
+        background-color: #E07507;
+    }
+    &:checked + .btn-box-group {
+        background-color: #ccc;
+    }
+    &:checked + .btn-box .circle-btn-personal {
+        margin-left: 20px;
+    }
+        &:checked + .btn-box .circle-btn-group {
+        margin-left: 0px;
+    }
+}
+
+//手機版選擇門市視窗
+.select-store-sm {
+    position: absolute;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba($color: #f4e4b7, $alpha: 0.95);
+    z-index: 30;
+}
+
+//手機版查看購物車按鈕
+.watch-cart {
+    position: absolute;
+    position: fixed;
+    bottom :2% ;
+    left: 50%;
+    z-index: 20;
+    
+}
+
+.start-shop-btn-lg {
+    display: none;
+}
+// .add-cart-box {
+//     display: none;
+// }
+
+
+@media (min-width: 768px){
+    .start-shop-btn-sm {
+        display: none;
+    }
+    .select-store-sm {
+        display: none;
+    }
+    .start-shop-btn-lg {
+        display: block;
+    }
+    // .add-cart-box {
+    //     display: block;
+    // }
+}
+
+.show {
+    display: none;
+}
+
+@media (min-width: 768px){
+    .show {
+        display: block;
+    }
+}

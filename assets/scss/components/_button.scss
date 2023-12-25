@@ -1,0 +1,11 @@
+.btn-outline-primary{
+  --bs-btn-hover-color: #{$primary};
+}
+
+//訂餐頁面
+.a-hvoer {
+  background-color:#E07507;
+  &:hover {
+    opacity: 0.8;
+  }
+}

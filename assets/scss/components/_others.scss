@@ -1,0 +1,20 @@
+//搜尋欄(訂餐頁面)
+.input-container {
+    position: relative;
+    // display: inline-block;
+    input {
+        padding: 8px;
+        border-radius: 10px;
+        border: 2px solid #d1d9e5;
+        width: 100%;
+        &::placeholder {
+            color: #bfc3ca;
+        }
+    }
+    .search-icon {
+        position: absolute;
+        right: 5%;
+        top:25%;
+        font-size: 20px;
+    }
+}

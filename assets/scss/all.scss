@@ -1,11 +1,19 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+@import "./utils/variables";
 
+// base -
+@import './base/base.scss';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// helper -
+@import './helpers/tools';
 
+// components
+@import './components/button';
+@import './components/others';
 
+// layout -
+@import './layout/header';
+@import './layout/footer';
+
+// pages -
 @import './pages/index.scss';
-
-@import "../../node_modules/bootstrap";
+@import './pages/personalOrder';

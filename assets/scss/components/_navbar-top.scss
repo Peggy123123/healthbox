@@ -1,0 +1,19 @@
+// .navbar-line{
+//   li{
+//     position: relative;
+//     &:not(:last-child)::after{
+//       content:"";  
+//       @include media-breakpoint-up(lg){
+//         content:"";
+//         position: absolute;
+//         display: black;
+//         top: 50%;
+//         right: 0;
+//         transform: translateY(-50%);
+//         width: 1px;
+//         height: 14px;
+//         background-color: $black-400;
+//       }
+//     }
+//   }
+// }
