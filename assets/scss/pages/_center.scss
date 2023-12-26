@@ -1,0 +1,57 @@
+.center-nav {
+    @include pad-down {
+        justify-content: center;
+        .nav-item a:active {
+            border-bottom: 5px solid #E07507;
+        }
+        .active {
+            border-bottom: 5px solid #E07507;
+        }
+    }
+    @include pad-up {
+        flex-direction: column;
+        .nav-item a:active {
+            border-left: 5px solid #E07507;
+        }
+        .active {
+            border-left: 5px solid #E07507;
+        }
+    }
+}
+
+.save-btn {
+    @include pad-up {
+        justify-content: end;
+        .btn {
+            width: 25%;
+        }
+    }
+    @include pad-down {
+        justify-content: center;
+        .btn {
+            width: 50%;
+        }
+    }
+}
+
+@include pad-up {
+    .order-list-lg {
+        display: block;
+    }
+    .order-list-sm {
+        display: none;
+    }
+}
+
+@include pad-down {
+    .order-list-lg {
+        display: none;
+    }
+    .order-list-sm {
+        display: block;
+    }
+}
+
+.order-content {
+    border-radius: 0 0 5px 5px;
+}

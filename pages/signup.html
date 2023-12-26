@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+<body>
+    <div class="shadow-sm">
+        <div class="container">
+            <%- include('./layout/header'); -%> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center mt-s-20 mb-s-10">
+            <div class="col-lg-2 col-md-3 col-6">
+                <a href="login.html" class="btn-hover py-s-4 px-s-5 w-100 text-decoration-none text-center">Eat起吃過</a>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <button type="button" class="btn btn-primary py-s-4 px-s-5 text-white w-100 border-2">還沒吃過</button>
+            </div>
+            </div>
+        </div>
+        <div class="row flex-column mb-s-20">
+            <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                <form action="">
+                    <div class="row justify-content-center mb-s-5 align-items-center">
+                        <label for="email" class="col-lg-2 col-mb-2 col-3">Email：</label>
+                        <input type="email" class="col-lg-6 col-mb-6 col-8 w-50 border rounded-2 p-s-3" name="email" placeholder="請輸入Email">
+                    </div>
+                    <div class="row  justify-content-center mb-s-5 align-items-center">
+                        <label for="password " class="col-lg-2 col-mb-2 col-3">密碼：</label>
+                        <input type="email" class="col-lg-8 col-mb-6 col-8 w-50 border rounded-2 p-s-3" name="password" placeholder="請輸入密碼">
+                    </div>
+                    <div class="row  justify-content-center mb-s-5 align-items-center">
+                        <label for="password " class="col-lg-2 col-mb-2 col-3">確認密碼：</label>
+                        <input type="email" class="col-lg-8 col-mb-6 col-8 w-50 border rounded-2 p-s-3" name="password" placeholder="請再次輸入密碼">
+                    </div>
+                    <div class="row  justify-content-center mb-s-5 align-items-center">
+                        <label for="password " class="col-lg-2 col-mb-2 col-3">姓名：</label>
+                        <input type="email" class="col-lg-8 col-mb-6 col-8 w-50 border rounded-2 p-s-3" name="password" placeholder="請輸入姓名">
+                    </div>
+                    <div class="row  justify-content-center mb-s-5 align-items-center">
+                        <label for="password " class="col-lg-2 col-mb-2 col-3">手機：</label>
+                        <input type="email" class="col-lg-8 col-mb-6 col-8 w-50 border rounded-2 p-s-3" name="password" placeholder="請輸入手機號碼">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="w-50 btn btn-primary text-white fw-bold py-s-4 mt-s-5" type="submit">註冊</button>
+                    </div>
+                </form>
+                <p class="fs-s-3 text-center mt-s-10 mb-0">我們會使用你的個人資料來支援你在本網站中的使用體驗、管理你的帳號存取權<br>詳情請閱<a href="#">隱私權條款</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-shadow">
+        <div class="container pt-s-5">
+            <%- include('./layout/footer'); -%> 
+        </div>
+    </div>
+</body>
+</html>

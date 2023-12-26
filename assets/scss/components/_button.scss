@@ -1,4 +1,4 @@
-.btn-outline-primary{
+.btn-outline-primary {
   --bs-btn-hover-color: #{$primary};
 }
 
@@ -7,5 +7,21 @@
   background-color:#E07507;
   &:hover {
     opacity: 0.8;
+  }
+}
+
+//登入頁面
+.btn-hover {
+  color: #E07507;
+  background-color: #fff;
+  border: 2px solid #E07507;
+  border-radius: 5px;
+  &:hover{
+    background-color:#E07507;
+    color: #fff;
+  }
+  &:active {
+    background-color:#E07507;
+    color: #fff;
   }
 }

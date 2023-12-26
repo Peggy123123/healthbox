@@ -18,3 +18,13 @@
         font-size: 20px;
     }
 }
+
+//分店資訊 圖片
+
+.store-img {
+    max-width: 250px;
+    height: auto;
+    @include pad-down{
+        max-width: 150px;
+    }
+}

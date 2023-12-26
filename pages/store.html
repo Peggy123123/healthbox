@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門市資訊</title>
+</head>
+<link rel="stylesheet" href="../assets/scss/all.scss">
+<body>
+    <div class="shadow-sm">
+        <div class="container">
+            <%- include('./layout/header'); -%> 
+        </div>
+    </div>
+        <div class="container py-s-10">
+            <h2 class="text-center mb-s-5" style="font-size: 24px;">門市資訊</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-12 mb-s-2 d-flex justify-content-center"><a href="#store1" class="bg-primary py-s-3 py-s-2 text-center text-white text-decoration-none rounded w-75">信義安和店</a></div>
+                <div class="col-md-4 col-12 mb-s-2 d-flex justify-content-center"><a href="#store2" class="bg-primary py-s-3 py-s-2 text-center text-white text-decoration-none rounded w-75">台北車站店</a></div>
+                <div class="col-md-4 col-12 mb-s-2 d-flex justify-content-center"><a href="#store3" class="bg-primary py-s-3 py-s-2 text-center text-white text-decoration-none rounded w-75">新北板橋店</a></div>
+            </div>
+            <div class="row justify-content-center my-s-10 gy-5">
+                <div class="col-md-8 d-flex justify-content-evenly align-items-lg-center" id="store1">
+                    <img src="../assets/images/store1.jpeg" alt="" class="store-img">
+                    <div>
+                        <p class="mb-s-3">信義安和店</p>
+                        <p class="fs-s-3 mb-s-2">台北市信義區安和路111號</p>
+                        <p class="fs-s-3 mb-s-4">TEL:02-2345-6789</p>
+                        <p class="fs-s-3 mb-s-2">營業時間</p>
+                        <p class="fs-s-3 mb-s-2">Mon-Fri 11:00-20:00</p>
+                    </div> 
+                </div>
+                <div class="col-md-8 d-flex justify-content-evenly align-items-lg-center" id="store2">
+                    <img src="../assets/images/store2.jpeg" alt="" class="store-img">
+                    <div>
+                        <p class="mb-s-3">台北車站店</p>
+                        <p class="fs-s-3 mb-s-2">台北市中正區館前路222號</p>
+                        <p class="fs-s-3 mb-s-4">TEL:02-2345-6789</p>
+                        <p class="fs-s-3 mb-s-2">營業時間</p>
+                        <p class="fs-s-3 mb-s-2">Mon-Fri 11:00-20:00</p>
+                    </div> 
+                </div>
+                <div class="col-md-8 d-flex justify-content-evenly align-items-lg-center" id="store3">
+                    <img src="../assets/images/store3.jpeg" alt="" class="store-img">
+                    <div>
+                        <p class="mb-s-3">新北板橋店</p>
+                        <p class="fs-s-3 mb-s-2">新北市板橋區板新路222號</p>
+                        <p class="fs-s-3 mb-s-4">TEL:02-2345-6789</p>
+                        <p class="fs-s-3 mb-s-2">營業時間</p>
+                        <p class="fs-s-3 mb-s-2">Mon-Fri 11:00-20:00</p>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    <div class="footer-shadow">
+        <div class="container pt-s-5">
+            <%- include('./layout/footer'); -%> 
+        </div>
+    </div>
+</body>
+</html>

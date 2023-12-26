@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+<body>
+    <div class="shadow-sm">
+        <div class="container">
+            <%- include('./layout/header-login'); -%> 
+        </div>
+    </div>
+
+    <!-- 頁籤 -->
+    <ul class="nav center-nav mt-s-10 ms-md-s-10 mb-s-8 mb-md-20">
+        <li class="nav-item pe-s-2 pb-md-s-5">
+        <a class="nav-link userProfileBtn d-inline active " href="#">帳戶資料</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link oderListBtn d-inline " href="#">我的訂單</a>
+        </li>
+    </ul>
+    <!-- 頁籤內容 -->
+    <!-- 帳戶資料 -->
+    <div class="container userProfile mt-md-m-25 fs-s-3">
+        <div class="row flex-column mb-s-20 ps-md-s-25">
+            <div class="col-8 mx-auto">
+                <form action="">
+                    <div class="row mb-md-s-3">
+                        <div class="col-12 col-md-4 mb-s-4 mb-md-0 align-items-center">
+                            <label for="last-name" >姓氏：</label>
+                            <input type="text" class="w-100 border rounded-2 p-s-3" name="last-name" placeholder="請輸入姓氏" value="王">
+                        </div>
+                        <div class="col-12 col-md-4 mb-s-4 mb-md-0 align-items-center">
+                            <label for="first-name">名字：</label>
+                            <input type="text" class="w-100 border rounded-2 p-s-3" name="first-name" placeholder="請輸入名字" value="小明">
+                        </div>
+                        <div class="col-12 col-md-4 mb-s-4 mb-md-0 align-items-center">
+                            <label for="nick">暱稱：</label>
+                            <input type="text" class="w-100 border rounded-2 p-s-3" name="nick" placeholder="請輸入暱稱" value="明明">
+                            <p class="fs-s-3 mb-0 ms-s-2">在別人團購訂單顯示的名稱</p>
+                        </div>
+                    </div>
+                    <div class="row mb-md-s-5">
+                        <div class="col-12 col-md-6 mb-s-4 mb-md-0 align-items-center">
+                            <label for="email" >E-mail：</label>
+                            <input type="email" class="w-100  border rounded-2 p-s-3" name="email" placeholder="請輸入Email" value="ming@gmail.com">
+                        </div>
+                        <div class="col-12 col-md-6 mb-s-4 mb-md-0 align-items-center">
+                            <label for="phone" >手機號碼：</label>
+                            <input type="phone" class="w-100  border rounded-2 p-s-3" name="phone" placeholder="請輸入手機號碼" value="09-12345678">
+                        </div>
+                    </div>
+                    <div class="row mb-md-s-5">
+                        <div class="col-12 col-md-6 mb-s-4 mb-md-0 align-items-center">
+                            <label for="address1" >地址 1：</label>
+                            <input type="text" class="w-100  border rounded-2 p-s-3" name="address1" placeholder="請輸入地址 1" >
+                        </div>
+                        <div class="col-12 col-md-6 mb-s-4 mb-md-0 align-items-center">
+                            <label for="address2" >地址 2：</label>
+                            <input type="text" class="w-100  border rounded-2 p-s-3" name="address2" placeholder="請輸入地址 2">
+                        </div>
+                        <div class="save-btn d-flex">
+                            <button class="btn btn-primary text-white fw-bold py-s-3 mt-s-4 fs-s-3" type="submit">儲存變更</button>
+                        </div>
+                    </div>
+                    <h4 class="text-center mt-s-10 mt-md-s-10 fs-s-5">變更密碼</h4>
+                    <div class="border border-primary rounded py-s-6 px-s-8">
+                        <div class="col-12 col-md-6 align-items-center mx-auto mb-md-s-4">
+                            <label for="password" >原密碼：</label>
+                            <input type="text" class="w-100  border rounded-2 p-s-3" name="password" placeholder="請輸入原密碼">
+                        </div>
+                        <div class="col-12 col-md-6 align-items-center mx-auto mb-md-s-4">
+                            <label for="password" >新密碼：</label>
+                            <input type="text" class="w-100  border rounded-2 p-s-3" name="password" placeholder="請輸入新密碼">
+                        </div>
+                        <div class="col-12 col-md-6 align-items-center mx-auto mb-md-s-4">
+                            <label for="password" >再次輸入原密碼：</label>
+                            <input type="text" class="w-100  border rounded-2 p-s-3" name="password" placeholder="請再次輸入新密碼">
+                        </div>
+                    </div>
+                    <div class="save-btn d-flex">
+                        <button class="btn btn-primary text-white fw-bold py-s-3 mt-s-4 fs-s-3" type="submit">變更密碼</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 訂單 -->
+    <div class="container oderList pb-s-20 mt-md-m-25 d-none">
+        <!-- 電腦版訂單 -->
+        <div class="order-list-lg">
+            <div class="row justify-content-center">
+                <table class="table ms-md-s-25 w-75 fs-s-3">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>訂單編號</th>
+                            <th>訂單時間</th>
+                            <th>類別</th>
+                            <th>金額</th>
+                            <th>付款狀態</th>
+                            <th>出貨進度</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody class="table-hover">
+                        <tr>
+                            <td>A123456777</td>
+                            <td>2023.09.05 11:45</td>
+                            <td>揪團訂餐</td>
+                            <td>NT$850</td>
+                            <td>現金結帳</td>
+                            <td class="fw-bold text-primary">配送中</td>
+                        </tr>
+                        <tr>
+                            <td>A123456888</td>
+                            <td>2023.09.05 11:45</td>
+                            <td>個人訂餐</td>
+                            <td>NT$250</td>
+                            <td>現金結帳</td>
+                            <td class="fw-bold text-primary">配送中</td>
+                        </tr>
+                        <tr>
+                            <td>A123456999</td>
+                            <td>2023.09.05 11:45</td>
+                            <td>線上超市</td>
+                            <td>NT$1000</td>
+                            <td>信用卡</td>
+                            <td class="fw-bold text-primary">已配達</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+        <!-- 手機版訂單 -->
+        <div class="order-list-sm">
+            <div class="order-1 row justify-content-center fs-s-3">
+                <div class="col-10 d-flex justify-content-between bg-secondary p-s-3 fw-bold rounded align-items-center">
+                    <div>
+                        <span class="me-s-3">訂單編號</span>
+                        <span>A123456777</span>
+                    </div>
+                    <span><a href="#" class="text-primary"><i class="fa-solid fa-chevron-down"></i></a></span>
+                </div>
+            </div>
+            <div class="order-1-content row justify-content-center pm-s-5 d-none">
+                <div class="order-content col-10 border border-secondary fs-s-3" style="margin-top:-10px ;">
+                    <div class="row py-s-3 mt-s-3">
+                        <div class="col-7 rounded"> 
+                            <span class="me-s-3">訂單時間</span>
+                            <span>2023.09.05 11:45</span>
+                        </div>
+                        <div class="col-5">
+                            <span  class="me-s-3">類別</span>
+                            <span>揪團訂餐</span>
+                        </div>
+                    </div>
+                    <div class="row py-s-3">
+                        <div class="col-7 rounded"> 
+                            <span class="me-s-3">金額</span>
+                            <span>NT$850</span>
+                        </div>
+                        <div class="col-5">
+                            <span  class="me-s-3">付款狀態</span>
+                            <span>現金結帳</span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center fs-s-4">
+                        <span class="text-primary fw-bold mb-s-3 fs-s-3">配送中</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-2 row justify-content-center fs-s-3 mt-s-2">
+                <div class="col-10 d-flex justify-content-between bg-secondary p-s-3 fw-bold rounded align-items-center">
+                    <div>
+                        <span class="me-s-3">訂單編號</span>
+                        <span>A123456888</span>
+                    </div>
+                    <span><a href="#" class="text-primary"><i class="fa-solid fa-chevron-down"></i></a></span>
+                </div>
+            </div>
+            <div class="order-2-content row justify-content-center pm-s-5 d-none">
+                <div class="order-content col-10 border border-secondary fs-s-3" style="margin-top:-10px ;">
+                    <div class="row py-s-3 mt-s-3">
+                        <div class="col-7 rounded"> 
+                            <span class="me-s-3">訂單時間</span>
+                            <span>2023.09.05 11:45</span>
+                        </div>
+                        <div class="col-5">
+                            <span  class="me-s-3">類別</span>
+                            <span>	個人訂餐</span>
+                        </div>
+                    </div>
+                    <div class="row py-s-3">
+                        <div class="col-7 rounded"> 
+                            <span class="me-s-3">金額</span>
+                            <span>NT$250</span>
+                        </div>
+                        <div class="col-5">
+                            <span  class="me-s-3">付款狀態</span>
+                            <span>現金結帳</span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center fs-s-4">
+                        <span class="text-primary fw-bold mb-s-3 fs-s-3">配送中</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-3 row justify-content-center fs-s-3 mt-s-2">
+                <div class="col-10 d-flex justify-content-between bg-secondary p-s-3 fw-bold rounded align-items-center">
+                    <div>
+                        <span class="me-s-3">訂單編號</span>
+                        <span>A123456999</span>
+                    </div>
+                    <span><a href="#" class="text-primary"><i class="fa-solid fa-chevron-down"></i></a></span>
+                </div>
+            </div>
+            <div class="order-3-content row justify-content-center pm-s-5 d-none">
+                <div class="order-content col-10 border border-secondary fs-s-3" style="margin-top:-10px ;">
+                    <div class="row py-s-3 mt-s-3">
+                        <div class="col-7 rounded"> 
+                            <span class="me-s-3">訂單時間</span>
+                            <span>2023.09.05 11:45</span>
+                        </div>
+                        <div class="col-5">
+                            <span  class="me-s-3">類別</span>
+                            <span>	上超市</span>
+                        </div>
+                    </div>
+                    <div class="row py-s-3">
+                        <div class="col-7 rounded"> 
+                            <span class="me-s-3">金額</span>
+                            <span>NT$1000</span>
+                        </div>
+                        <div class="col-5">
+                            <span  class="me-s-3">付款狀態</span>
+                            <span>信用卡</span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center fs-s-4">
+                        <span class="text-primary fw-bold mb-s-3 fs-s-3">已配達</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-shadow">
+        <div class="container pt-s-5">
+            <%- include('./layout/footer'); -%> 
+        </div>
+    </div>
+    <script src="../assets/js/center.js"></script>
+</body>
+</html>
