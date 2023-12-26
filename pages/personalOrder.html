@@ -29,13 +29,16 @@
           <input type="text" placeholder="健康時蔬餐">
         </div>
       </div>
-      <ul class="col-lg-8 d-flex justify-content-evenly foodClass-lg">
-        <li class="me-s-4"><a href="#recommend" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">人氣<br>精選</a></li>
-        <li class="me-s-4"><a href="#muscle" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">增肌<br>推薦</a></li>
-        <li class="me-s-4"><a href="#veg" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">蔬食<br>專屬</a></li>
-        <li class="me-s-4"><a href="#fit" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">瘦身<br>推薦</a></li>
-        <li><a href="#drink" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">健康<br>飲品</a></li>
-      </ul>
+      <div class="foodClass-lg col-lg-8">
+        <ul class=" d-flex justify-content-evenly">
+          <li class="me-s-4"><a href="#recommend" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">人氣<br>精選</a></li>
+          <li class="me-s-4"><a href="#muscle" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">增肌<br>推薦</a></li>
+          <li class="me-s-4"><a href="#veg" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">蔬食<br>專屬</a></li>
+          <li class="me-s-4"><a href="#fit" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">瘦身<br>推薦</a></li>
+          <li><a href="#drink" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">健康<br>飲品</a></li>
+        </ul>
+      </div>
+
       <!-- 餐盒分類 -->
       <!-- Slider main container -->
       <div class="swiper foodClass-sm">
@@ -43,18 +46,18 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <li class="me-s-4"><a href="#recommend" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer" style="white-space:nowrap">人氣<br>精選</a></li>
+            <li class="me-s-4 text-center"><a href="#recommend" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer" style="white-space:nowrap">人氣<br>精選</a></li>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide text-center">
             <li class="me-s-4"><a href="#muscle" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">增肌<br>推薦</a></li>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide text-center">
             <li class="me-s-4"><a href="#veg" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">蔬食<br>專屬</a></li>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide text-center">
             <li class="me-s-4"><a href="#fit" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">瘦身<br>推薦</a></li>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide text-center">
             <li><a href="#drink" class="rounded text-white py-s-2 px-s-6 text-decoration-none a-hvoer">健康<br>飲品</a></li>
           </div>
         </div>
@@ -65,7 +68,8 @@
   <div class="container my-5">
     <div class="my-5" id="recommend">
       <h2 class="h3 mb-s-5">精選推薦</h2>
-      <div class="row food-card-sm justify-content-center">
+      <div class="food-card-sm ">
+      <div class="row justify-content-center">
         <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
             <div class="position-relative">
               <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
@@ -122,6 +126,7 @@
               </button>
             </div>
           </div>
+        </div>
         </div>           
       <div class="swiper swiper-food">
         <!-- Additional required wrapper -->
@@ -132,48 +137,57 @@
               <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
               <div class="tag">超人氣</div>
             </div>
-            <h3 class="fsw-5">雞胸肉燕麥餐</h3>
-            <p class="mb-s-2">NT$ 150</p>
-            <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
-              加入購物車
-              <i class=" fa-solid fa-circle-plus"></i>
-            </button>
+            <h3 class="fs-4 text-center mt-s-2">雞胸肉燕麥餐</h3>
+            <p class="mb-s-2 text-center">NT$ 150</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
+                加入購物車
+                <i class=" fa-solid fa-circle-plus"></i>
+              </button>
+            </div>
+
           </div>
           <div class="swiper-slide flex-column">
             <div class="position-relative">
               <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
               <div class="tag">超人氣</div>
             </div>
-            <h3 class="fsw-5">力量源泉牛小排餐</h3>
-            <p class="mb-s-2">NT$ 200</p>
-            <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
-              加入購物車
-              <i class=" fa-solid fa-circle-plus"></i>
-            </button>
+            <h3 class="fs-4 text-center mt-s-2">力量源泉牛小排餐</h3>
+            <p class="mb-s-2 text-center">NT$ 200</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
+                加入購物車
+                <i class=" fa-solid fa-circle-plus"></i>
+              </button>
+            </div>
           </div>
           <div class="swiper-slide flex-column">
             <div class="position-relative">
               <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
               <div class="tag">超人氣</div>
             </div>
-            <h3 class="fsw-5">活力充沛嫩豬餐</h3>
-            <p class="mb-s-2">NT$ 180</p>
-            <button type="button" class="add-cart-btn btn btn-primary text-white">
-              加入購物車
-              <i class=" fa-solid fa-circle-plus"></i>
-            </button>
+            <h3 class="fs-4 text-center mt-s-2">活力充沛嫩豬餐</h3>
+            <p class="mb-s-2 text-center">NT$ 180</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="add-cart-btn btn btn-primary text-white">
+                加入購物車
+                <i class=" fa-solid fa-circle-plus"></i>
+              </button>
+            </div>
           </div>
           <div class="swiper-slide flex-column">
             <div class="position-relative">
               <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
               <div class="tag">超人氣</div>
             </div>
-            <h3 class="fsw-5">輕食火雞胸肉串餐</h3>
-            <p class="mb-s-2">NT$ 145</p>
-            <button type="button" class="add-cart-btn btn btn-primary text-white">
-              加入購物車
-              <i class=" fa-solid fa-circle-plus"></i>
-            </button>
+            <h3 class="fs-4 text-center mt-s-2">輕食火雞胸肉串餐</h3>
+            <p class="mb-s-2 text-center">NT$ 145</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="add-cart-btn btn btn-primary text-white">
+                加入購物車
+                <i class=" fa-solid fa-circle-plus"></i>
+              </button>
+            </div>
           </div>
         </div>
         <!-- If we need navigation buttons -->
@@ -183,8 +197,9 @@
       </div>
       <div class="my-5">
         <h2 class="h3 mb-s-5">再次訂購</h2>
-        <div class="row food-card-sm justify-content-center">
-          <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
+        <div class="food-card-sm ">
+          <div class="row justify-content-center">
+            <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
               <div class="position-relative">
                 <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
                 <div class="tag">超人氣</div>
@@ -240,6 +255,8 @@
                 </button>
               </div>
             </div>
+          </div>
+
           </div>           
         <div class="swiper swiper-food">
           <!-- Additional required wrapper -->
@@ -250,48 +267,57 @@
                 <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
                 <div class="tag">超人氣</div>
               </div>
-              <h3 class="fsw-5">雞胸肉燕麥餐</h3>
-              <p class="mb-s-2">NT$ 150</p>
-              <button type="button" class="add-cart-btn btn btn-primary text-white">
-                加入購物車
-                <i class=" fa-solid fa-circle-plus"></i>
-              </button>
+              <h3 class="fs-4 text-center mt-s-2">雞胸肉燕麥餐</h3>
+              <p class="mb-s-2 text-center">NT$ 150</p>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
+                  加入購物車
+                  <i class=" fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
+
             </div>
             <div class="swiper-slide flex-column">
               <div class="position-relative">
                 <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
                 <div class="tag">超人氣</div>
               </div>
-              <h3 class="fsw-5">力量源泉牛小排餐</h3>
-              <p class="mb-s-2">NT$ 200</p>
-              <button type="button" class="add-cart-btn btn btn-primary text-white">
-                加入購物車
-                <i class=" fa-solid fa-circle-plus"></i>
-              </button>
+              <h3 class="fs-4 text-center mt-s-2">力量源泉牛小排餐</h3>
+              <p class="mb-s-2 text-center">NT$ 200</p>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
+                  加入購物車
+                  <i class=" fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
             </div>
             <div class="swiper-slide flex-column">
               <div class="position-relative">
                 <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
                 <div class="tag">超人氣</div>
               </div>
-              <h3 class="fsw-5">活力充沛嫩豬餐</h3>
-              <p class="mb-s-2">NT$ 180</p>
-              <button type="button" class="add-cart-btn btn btn-primary text-white">
-                加入購物車
-                <i class=" fa-solid fa-circle-plus"></i>
-              </button>
+              <h3 class="fs-4 text-center mt-s-2">活力充沛嫩豬餐</h3>
+              <p class="mb-s-2 text-center">NT$ 180</p>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="add-cart-btn btn btn-primary text-white">
+                  加入購物車
+                  <i class=" fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
             </div>
             <div class="swiper-slide flex-column">
               <div class="position-relative">
                 <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
                 <div class="tag">超人氣</div>
               </div>
-              <h3 class="fsw-5">輕食火雞胸肉串餐</h3>
-              <p class="mb-s-2">NT$ 145</p>
-              <button type="button" class="add-cart-btn btn btn-primary text-white">
-                加入購物車
-                <i class=" fa-solid fa-circle-plus"></i>
-              </button>
+              <h3 class="fs-4 text-center mt-s-2">輕食火雞胸肉串餐</h3>
+              <p class="mb-s-2 text-center">NT$ 145</p>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="add-cart-btn btn btn-primary text-white">
+                  加入購物車
+                  <i class=" fa-solid fa-circle-plus"></i>
+                </button>
+              </div>
             </div>
           </div>
           <!-- If we need navigation buttons -->
@@ -301,8 +327,9 @@
         </div>
         <div class="my-5" id="muscle">
           <h2 class="h3 mb-s-5">增肌推薦</h2>
-          <div class="row food-card-sm justify-content-center">
-            <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
+          <div class="food-card-sm">
+            <div class="row justify-content-center">
+              <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
                 <div class="position-relative">
                   <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
                   <div class="tag">超人氣</div>
@@ -358,6 +385,7 @@
                   </button>
                 </div>
               </div>
+            </div>
             </div>           
           <div class="swiper swiper-food">
             <!-- Additional required wrapper -->
@@ -368,48 +396,56 @@
                   <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
                   <div class="tag">超人氣</div>
                 </div>
-                <h3 class="fsw-5">雞胸肉燕麥餐</h3>
-                <p class="mb-s-2">NT$ 150</p>
-                <button type="button" class="add-cart-btn btn btn-primary text-white">
-                  加入購物車
-                  <i class=" fa-solid fa-circle-plus"></i>
-                </button>
+                <h3 class="fs-4 text-center mt-s-2">雞胸肉燕麥餐</h3>
+                <p class="mb-s-2 text-center">NT$ 150</p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
+                    加入購物車
+                    <i class=" fa-solid fa-circle-plus"></i>
+                  </button>
+                </div>
               </div>
               <div class="swiper-slide flex-column">
                 <div class="position-relative">
                   <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
                   <div class="tag">超人氣</div>
                 </div>
-                <h3 class="fsw-5">力量源泉牛小排餐</h3>
-                <p class="mb-s-2">NT$ 200</p>
-                <button type="button" class="add-cart-btn btn btn-primary text-white">
-                  加入購物車
-                  <i class=" fa-solid fa-circle-plus"></i>
-                </button>
+                <h3 class="fs-4 text-center mt-s-2">力量源泉牛小排餐</h3>
+                <p class="mb-s-2 text-center">NT$ 200</p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
+                    加入購物車
+                    <i class=" fa-solid fa-circle-plus"></i>
+                  </button>
+                </div>
               </div>
               <div class="swiper-slide flex-column">
                 <div class="position-relative">
                   <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
                   <div class="tag">超人氣</div>
                 </div>
-                <h3 class="fsw-5">活力充沛嫩豬餐</h3>
-                <p class="mb-s-2">NT$ 180</p>
-                <button type="button" class="add-cart-btn btn btn-primary text-white">
-                  加入購物車
-                  <i class=" fa-solid fa-circle-plus"></i>
-                </button>
+                <h3 class="fs-4 text-center mt-s-2">活力充沛嫩豬餐</h3>
+                <p class="mb-s-2 text-center">NT$ 180</p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="add-cart-btn btn btn-primary text-white">
+                    加入購物車
+                    <i class=" fa-solid fa-circle-plus"></i>
+                  </button>
+                </div>
               </div>
               <div class="swiper-slide flex-column">
                 <div class="position-relative">
                   <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
                   <div class="tag">超人氣</div>
                 </div>
-                <h3 class="fsw-5">輕食火雞胸肉串餐</h3>
-                <p class="mb-s-2">NT$ 145</p>
-                <button type="button" class="add-cart-btn btn btn-primary text-white">
-                  加入購物車
-                  <i class=" fa-solid fa-circle-plus"></i>
-                </button>
+                <h3 class="fs-4 text-center mt-s-2">輕食火雞胸肉串餐</h3>
+                <p class="mb-s-2 text-center">NT$ 145</p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="add-cart-btn btn btn-primary text-white">
+                    加入購物車
+                    <i class=" fa-solid fa-circle-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
             <!-- If we need navigation buttons -->
@@ -419,125 +455,8 @@
           </div>
           <div class="my-5" id="veg">
             <h2 class="h3 mb-s-5">蔬食專屬</h2>
-            <div class="row food-card-sm justify-content-center">
-              <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5 text-center">雞胸肉燕麥餐</h3>
-                  <p class="mb-s-2 text-center">NT$ 250</p>
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
-                      加入購物車
-                      <i class=" fa-solid fa-circle-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 2.png" alt="圖片" class="w-50 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5 text-center">力量源泉牛小排餐</h3>
-                  <p class="mb-s-2 text-center">NT$ 200</p>
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
-                      加入購物車
-                      <i class=" fa-solid fa-circle-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 3.png" alt="圖片" class="w-50 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5 text-center">活力充沛嫩豬餐</h3>
-                  <p class="mb-s-2 text-center">NT$ 180</p>
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
-                      加入購物車
-                      <i class=" fa-solid fa-circle-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 4.png" alt="圖片" class="w-50 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5 text-center">輕食火雞胸肉串餐</h3>
-                  <p class="mb-s-2 text-center">NT$ 145</p>
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
-                      加入購物車
-                      <i class=" fa-solid fa-circle-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>           
-            <div class="swiper swiper-food">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide flex-column">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5">雞胸肉燕麥餐</h3>
-                  <p class="mb-s-2">NT$ 150</p>
-                  <button type="button" class="add-cart-btn btn btn-primary text-white">
-                    加入購物車
-                    <i class=" fa-solid fa-circle-plus"></i>
-                  </button>
-                </div>
-                <div class="swiper-slide flex-column">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5">力量源泉牛小排餐</h3>
-                  <p class="mb-s-2">NT$ 200</p>
-                  <button type="button" class="add-cart-btn btn btn-primary text-white">
-                    加入購物車
-                    <i class=" fa-solid fa-circle-plus"></i>
-                  </button>
-                </div>
-                <div class="swiper-slide flex-column">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5">活力充沛嫩豬餐</h3>
-                  <p class="mb-s-2">NT$ 180</p>
-                  <button type="button" class="add-cart-btn btn btn-primary text-white">
-                    加入購物車
-                    <i class=" fa-solid fa-circle-plus"></i>
-                  </button>
-                </div>
-                <div class="swiper-slide flex-column">
-                  <div class="position-relative">
-                    <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
-                    <div class="tag">超人氣</div>
-                  </div>
-                  <h3 class="fsw-5">輕食火雞胸肉串餐</h3>
-                  <p class="mb-s-2">NT$ 145</p>
-                  <button type="button" class="add-cart-btn btn btn-primary text-white">
-                    加入購物車
-                    <i class=" fa-solid fa-circle-plus"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            </div>
-            <div class="my-5" id="fit">
-              <h2 class="h3 mb-s-5">瘦身推薦</h2>
-              <div class="row food-card-sm justify-content-center">
+            <div class="food-card-sm">
+              <div class="row justify-content-center">
                 <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
                     <div class="position-relative">
                       <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
@@ -594,68 +513,78 @@
                       </button>
                     </div>
                   </div>
-                </div>           
-              <div class="swiper swiper-food">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide flex-column">
-                    <div class="position-relative">
-                      <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
-                      <div class="tag">超人氣</div>
-                    </div>
-                    <h3 class="fsw-5">雞胸肉燕麥餐</h3>
-                    <p class="mb-s-2">NT$ 150</p>
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
+                </div>
+            </div>
+            <div class="swiper swiper-food">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide flex-column">
+                  <div class="position-relative">
+                    <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
+                    <div class="tag">超人氣</div>
+                  </div>
+                  <h3 class="fs-4 text-center mt-s-2">雞胸肉燕麥餐</h3>
+                  <p class="mb-s-2 text-center">NT$ 150</p>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
                       加入購物車
                       <i class=" fa-solid fa-circle-plus"></i>
                     </button>
                   </div>
-                  <div class="swiper-slide flex-column">
-                    <div class="position-relative">
-                      <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
-                      <div class="tag">超人氣</div>
-                    </div>
-                    <h3 class="fsw-5">力量源泉牛小排餐</h3>
-                    <p class="mb-s-2">NT$ 200</p>
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
+                </div>
+                <div class="swiper-slide flex-column">
+                  <div class="position-relative">
+                    <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
+                    <div class="tag">超人氣</div>
+                  </div>
+                  <h3 class="fs-4 text-center mt-s-2">力量源泉牛小排餐</h3>
+                  <p class="mb-s-2 text-center">NT$ 200</p>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
                       加入購物車
                       <i class=" fa-solid fa-circle-plus"></i>
                     </button>
                   </div>
-                  <div class="swiper-slide flex-column">
-                    <div class="position-relative">
-                      <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
-                      <div class="tag">超人氣</div>
-                    </div>
-                    <h3 class="fsw-5">活力充沛嫩豬餐</h3>
-                    <p class="mb-s-2">NT$ 180</p>
-                    <button type="button" class="add-cart-btn btn btn-primary text-white">
-                      加入購物車
-                      <i class=" fa-solid fa-circle-plus"></i>
-                    </button>
+                </div>
+                <div class="swiper-slide flex-column">
+                  <div class="position-relative">
+                    <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
+                    <div class="tag">超人氣</div>
                   </div>
-                  <div class="swiper-slide flex-column">
-                    <div class="position-relative">
-                      <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
-                      <div class="tag">超人氣</div>
-                    </div>
-                    <h3 class="fsw-5">輕食火雞胸肉串餐</h3>
-                    <p class="mb-s-2">NT$ 145</p>
+                  <h3 class="fs-4 text-center mt-s-2">活力充沛嫩豬餐</h3>
+                  <p class="mb-s-2 text-center">NT$ 180</p>
+                  <div class="d-flex justify-content-center">
                     <button type="button" class="add-cart-btn btn btn-primary text-white">
                       加入購物車
                       <i class=" fa-solid fa-circle-plus"></i>
                     </button>
                   </div>
                 </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-slide flex-column">
+                  <div class="position-relative">
+                    <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
+                    <div class="tag">超人氣</div>
+                  </div>
+                  <h3 class="fs-4 text-center mt-s-2">輕食火雞胸肉串餐</h3>
+                  <p class="mb-s-2 text-center">NT$ 145</p>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="add-cart-btn btn btn-primary text-white">
+                      加入購物車
+                      <i class=" fa-solid fa-circle-plus"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-              </div>
-              <div class="my-5" id="drink">
-                <h2 class="h3 mb-s-5">健康飲品</h2>
-                <div class="row food-card-sm justify-content-center">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            </div>
+            <div class="my-5" id="fit">
+              <h2 class="h3 mb-s-5">瘦身推薦</h2>
+              <div class="food-card-sm">
+                <div class="row justify-content-center">
                   <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
                       <div class="position-relative">
                         <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
@@ -712,7 +641,137 @@
                         </button>
                       </div>
                     </div>
-                  </div>           
+                  </div>
+              </div>
+              <div class="swiper swiper-food">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide flex-column">
+                    <div class="position-relative">
+                      <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
+                      <div class="tag">超人氣</div>
+                    </div>
+                    <h3 class="fs-4 text-center mt-s-2">雞胸肉燕麥餐</h3>
+                    <p class="mb-s-2 text-center">NT$ 150</p>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
+                        加入購物車
+                        <i class=" fa-solid fa-circle-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex-column">
+                    <div class="position-relative">
+                      <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
+                      <div class="tag">超人氣</div>
+                    </div>
+                    <h3 class="fs-4 text-center mt-s-2">力量源泉牛小排餐</h3>
+                    <p class="mb-s-2 text-center">NT$ 200</p>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
+                        加入購物車
+                        <i class=" fa-solid fa-circle-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex-column">
+                    <div class="position-relative">
+                      <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
+                      <div class="tag">超人氣</div>
+                    </div>
+                    <h3 class="fs-4 text-center mt-s-2">活力充沛嫩豬餐</h3>
+                    <p class="mb-s-2 text-center">NT$ 180</p>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="add-cart-btn btn btn-primary text-white">
+                        加入購物車
+                        <i class=" fa-solid fa-circle-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex-column">
+                    <div class="position-relative">
+                      <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
+                      <div class="tag">超人氣</div>
+                    </div>
+                    <h3 class="fs-4 text-center mt-s-2">輕食火雞胸肉串餐</h3>
+                    <p class="mb-s-2 text-center">NT$ 145</p>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="add-cart-btn btn btn-primary text-white">
+                        加入購物車
+                        <i class=" fa-solid fa-circle-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              </div>
+              <div class="my-5" id="drink">
+                <h2 class="h3 mb-s-5">健康飲品</h2>
+                <div class="food-card-sm">
+                  <div class="row justify-content-center">
+                    <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
+                        <div class="position-relative">
+                          <img src="../assets/images/bento 1.png" alt="圖片" class="w-50 mx-auto">
+                          <div class="tag">超人氣</div>
+                        </div>
+                        <h3 class="fsw-5 text-center">雞胸肉燕麥餐</h3>
+                        <p class="mb-s-2 text-center">NT$ 250</p>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="add-cart-btn btn btn-primary text-white">
+                            加入購物車
+                            <i class=" fa-solid fa-circle-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
+                        <div class="position-relative">
+                          <img src="../assets/images/bento 2.png" alt="圖片" class="w-50 mx-auto">
+                          <div class="tag">超人氣</div>
+                        </div>
+                        <h3 class="fsw-5 text-center">力量源泉牛小排餐</h3>
+                        <p class="mb-s-2 text-center">NT$ 200</p>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="add-cart-btn btn btn-primary text-white">
+                            加入購物車
+                            <i class=" fa-solid fa-circle-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
+                        <div class="position-relative">
+                          <img src="../assets/images/bento 3.png" alt="圖片" class="w-50 mx-auto">
+                          <div class="tag">超人氣</div>
+                        </div>
+                        <h3 class="fsw-5 text-center">活力充沛嫩豬餐</h3>
+                        <p class="mb-s-2 text-center">NT$ 180</p>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="add-cart-btn btn btn-primary text-white">
+                            加入購物車
+                            <i class=" fa-solid fa-circle-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-10 flex-column mb-s-5 mx-s-3 py-s-3 bg-secondary-light rounded">
+                        <div class="position-relative">
+                          <img src="../assets/images/bento 4.png" alt="圖片" class="w-50 mx-auto">
+                          <div class="tag">超人氣</div>
+                        </div>
+                        <h3 class="fsw-5 text-center">輕食火雞胸肉串餐</h3>
+                        <p class="mb-s-2 text-center">NT$ 145</p>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="add-cart-btn btn btn-primary text-white">
+                            加入購物車
+                            <i class=" fa-solid fa-circle-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
                 <div class="swiper swiper-food">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
@@ -722,48 +781,56 @@
                         <img src="../assets/images/bento 1.png" alt="圖片" class="w-75 mx-auto">
                         <div class="tag">超人氣</div>
                       </div>
-                      <h3 class="fsw-5">雞胸肉燕麥餐</h3>
-                      <p class="mb-s-2">NT$ 150</p>
-                      <button type="button" class="add-cart-btn btn btn-primary text-white">
-                        加入購物車
-                        <i class=" fa-solid fa-circle-plus"></i>
-                      </button>
+                      <h3 class="fs-4 text-center mt-s-2">雞胸肉燕麥餐</h3>
+                      <p class="mb-s-2 text-center">NT$ 150</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="雞胸肉燕麥餐">
+                          加入購物車
+                          <i class=" fa-solid fa-circle-plus"></i>
+                        </button>
+                      </div>
                     </div>
                     <div class="swiper-slide flex-column">
                       <div class="position-relative">
                         <img src="../assets/images/bento 2.png" alt="圖片" class="w-75 mx-auto">
                         <div class="tag">超人氣</div>
                       </div>
-                      <h3 class="fsw-5">力量源泉牛小排餐</h3>
-                      <p class="mb-s-2">NT$ 200</p>
-                      <button type="button" class="add-cart-btn btn btn-primary text-white">
-                        加入購物車
-                        <i class=" fa-solid fa-circle-plus"></i>
-                      </button>
+                      <h3 class="fs-4 text-center mt-s-2">力量源泉牛小排餐</h3>
+                      <p class="mb-s-2 text-center">NT$ 200</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="add-cart-btn btn btn-primary text-white" data-id="力量源泉牛小排餐">
+                          加入購物車
+                          <i class=" fa-solid fa-circle-plus"></i>
+                        </button>
+                      </div>
                     </div>
                     <div class="swiper-slide flex-column">
                       <div class="position-relative">
                         <img src="../assets/images/bento 3.png" alt="圖片" class="w-75 mx-auto">
                         <div class="tag">超人氣</div>
                       </div>
-                      <h3 class="fsw-5">活力充沛嫩豬餐</h3>
-                      <p class="mb-s-2">NT$ 180</p>
-                      <button type="button" class="add-cart-btn btn btn-primary text-white">
-                        加入購物車
-                        <i class=" fa-solid fa-circle-plus"></i>
-                      </button>
+                      <h3 class="fs-4 text-center mt-s-2">活力充沛嫩豬餐</h3>
+                      <p class="mb-s-2 text-center">NT$ 180</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="add-cart-btn btn btn-primary text-white">
+                          加入購物車
+                          <i class=" fa-solid fa-circle-plus"></i>
+                        </button>
+                      </div>
                     </div>
                     <div class="swiper-slide flex-column">
                       <div class="position-relative">
                         <img src="../assets/images/bento 4.png" alt="圖片" class="w-75 mx-auto">
                         <div class="tag">超人氣</div>
                       </div>
-                      <h3 class="fsw-5">輕食火雞胸肉串餐</h3>
-                      <p class="mb-s-2">NT$ 145</p>
-                      <button type="button" class="add-cart-btn btn btn-primary text-white">
-                        加入購物車
-                        <i class=" fa-solid fa-circle-plus"></i>
-                      </button>
+                      <h3 class="fs-4 text-center mt-s-2">輕食火雞胸肉串餐</h3>
+                      <p class="mb-s-2 text-center">NT$ 145</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="add-cart-btn btn btn-primary text-white">
+                          加入購物車
+                          <i class=" fa-solid fa-circle-plus"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <!-- If we need navigation buttons -->
@@ -977,7 +1044,7 @@
   <div class="add-cart-box-lg add-cart-box text-center d-none">
     <h3 class="mt-5 mb-3">選擇門市</h3>
     <form action="">
-      <select class="form-select w-50 mx-auto mb-3" aria-label="Default select example">
+      <select class="form-selectLg form-select w-50 mx-auto mb-3" aria-label="Default select example">
         <option value="信義安和店">信義安和店</option>
         <option value="台北車站店">台北車站店</option>
         <option value="新北板橋店">新北板橋店</option>
@@ -1011,7 +1078,7 @@
       <!-- 電腦版查看購物車按鈕 -->
   <a href="#" class="watch-cart-lg select-btn-lg d-none"><span>我的購物車</span><span class="cart-num-lg"></span></a>
   <!-- 電腦版購物車彈窗（個人） -->
-  <div class="add-cart-box d-none">
+  <div class="personal-cart-lg add-cart-box d-none overflow-auto">
     <div class="text-end pt-4 pe-4"><a href="#"><i class="fa-solid fa-angles-right text-primary fs-4"></i></a></div>
     <!-- 切換開關按鈕 -->
     <div class="d-flex justify-content-center mt-2 mb-5">
@@ -1026,12 +1093,12 @@
     </div>
     <!-- 購物車內容 -->
     <div>
-      <h3 class="text-center">你的訂單 (台北信義店)</h3>
-      <ul class="row mt-5">
+      <h3 class="text-center">你的訂單<span class="store-name"></span></h3>
+      <ul class="row mt-5 ps-0">
         <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
           <img src="../assets/images/bento 1.png" alt="Photo" class="w-25">
           <div class="d-flex flex-column justify-content-evenly">
-            <p>雞胸肉燕麥餐</p>
+            <p style="width: 100px">雞胸肉燕麥餐</p>
             <div class="d-flex justify-content-between">
               <button class="border-0 rounded-circle bg-primary">
                 <i class="fa-solid fa-minus  text-white"></i>
@@ -1051,7 +1118,7 @@
         <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
           <img src="../assets/images/bento 2.png" alt="Photo" class="w-25">
           <div class="d-flex flex-column justify-content-evenly">
-            <p>力量源泉牛小排餐</p>
+            <p style="width: 100px">力量源泉牛小排餐</p>
             <div class="d-flex justify-content-between">
               <button class="border-0 rounded-circle bg-primary">
                 <i class="fa-solid fa-minus  text-white"></i>
@@ -1085,10 +1152,15 @@
           <p class="fw-bold">$330</p>
         </div>
       </div>
+      <div class="col-10 mx-auto my-s-10">
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary text-white fw-bold w-75">前往結帳</button>
+        </div>
+      </div>
     </div>
   </div>
     <!-- 電腦版購物車彈窗（揪團） -->
-    <div class="add-cart-box d-none">
+    <div class="group-cart-lg add-cart-box d-none overflow-auto">
       <div class="text-end pt-4 pe-4"><a href="#"><i class="fa-solid fa-angles-right text-primary fs-4"></i></a></div>
       <!-- 切換開關按鈕 -->
       <div class="d-flex justify-content-center mt-2 mb-3">
@@ -1111,12 +1183,12 @@
       </div>
       <!-- 購物車內容 -->
       <div>
-        <h3 class="text-center">你的訂單 (台北信義店)</h3>
-        <ul class="row mt-5">
+        <h3 class="text-center">你的訂單<span class="store-name"></span></h3>
+        <ul class="row mt-5 ps-0">
           <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
             <img src="../assets/images/bento 1.png" alt="Photo" class="w-25">
             <div class="d-flex flex-column justify-content-evenly">
-              <p>雞胸肉燕麥餐</p>
+              <p style="width: 100px" class="text-center">雞胸肉燕麥餐</p>
               <div class="d-flex justify-content-between">
                 <button class="border-0 rounded-circle bg-primary">
                   <i class="fa-solid fa-minus  text-white"></i>
@@ -1136,7 +1208,7 @@
           <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
             <img src="../assets/images/bento 2.png" alt="Photo" class="w-25">
             <div class="d-flex flex-column justify-content-evenly">
-              <p>力量源泉牛小排餐</p>
+              <p style="width: 100px">力量源泉牛小排餐</p>
               <div class="d-flex justify-content-between">
                 <button class="border-0 rounded-circle bg-primary">
                   <i class="fa-solid fa-minus  text-white"></i>
@@ -1170,6 +1242,11 @@
             <p class="fw-bold">$330</p>
           </div>
         </div>
+        <div class="col-10 mx-auto my-s-10">
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary text-white fw-bold w-75">前往結帳</button>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="bg-secondary-light py-s-15 py-lg-s-20">
@@ -1187,9 +1264,24 @@
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 3.2,
-    spaceBetween: -10,
-  });
+    breakpoints:{
+    250: {
+    slidesPerView: 2,
+    spaceBetween: 10
+    },
+    280: {
+      slidesPerView: 2.5,
+      spaceBetween: 10
+    },
+    335: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    450: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+  }});
 </script>
 
 <script>
@@ -1197,8 +1289,16 @@
   // Optional parameters
   direction: 'horizontal',
   loop: false,
-  slidesPerView: 3.2,
-
+  breakpoints:{
+    1000: {
+      slidesPerView: 3.8,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    },
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',

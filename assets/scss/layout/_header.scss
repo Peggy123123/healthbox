@@ -1,9 +1,19 @@
-.navbar-nav{
-  flex-direction: row;
+//h1 圖片取代文字
+h1 {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 36px;
+  background-size: contain;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  @include desktop-up{
+    width: 129px;
+    height: 80px;
+  }
 }
 
-
-.logo-img{
-  width: 58px;
-
+.nav-item {
+  white-space:nowrap  //文字不換行
 }

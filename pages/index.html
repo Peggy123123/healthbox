@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>eat 起來</title>
   <%- include('./layout/meta') -%>
   <%- include('./layout/font') -%>
 </head>
 
 <body>
+
   <div class="container">
     <div class="row">
       <%- include('./layout/header'); -%>
@@ -28,9 +30,6 @@
         <div class="swiper-slide">
           <img src="../assets/images/hero2.png" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="../assets/images/hero3.png" alt="">
-        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -40,7 +39,7 @@
   </div>
   <section class="special pb-s-15 pb-lg-s-37 bg-secondary-light">
     <div class="container position-relative z-2000">
-      <img class="w-123 w-lg-349 position-absolute top-0 start-0 translate-middle-y mb-lg-s-10 ms-s-11 ms-lg-s-0" src="../assets/images/title-eat 起來.png" alt="">
+      <img class="title-img w-123 w-lg-349 position-absolute top-0 start-0 translate-middle-y mb-lg-s-10 ms-s-6 ms-lg-s-0" src="../assets/images/title-eat 起來.png" alt="">
       <div class="row position-relative pt-s-15 pt-lg-s-30 mb-s-8 mb-lg-s-20">
         <h3 class="text-center">
           <span class="line title">特</span>
@@ -122,7 +121,7 @@
       <a href="" class="btn py-s-6 px-s-20 btn-primary fsw-4 rounded-3 text-white">訂起來</a>
     </div>
   </section>
-  <section class="scroll-animate-group">
+  <section class="scroll-animate-group mb-s-12">
     <div class="scroll-animate position-relative">
       <img data-aos="fade-up-right" src="../assets/images/blob image1.png" alt="">
       <img data-aos="fade-up-left" src="../assets/images/blob image2.png" alt="">
@@ -137,10 +136,10 @@
       <img src="../assets/images/line 2.png" alt="">
     </div>
   </section>
-  <section class="buy-together bg-black-200 pb-s-15 pb-lg-s-37">
+  <section class="buy-together bg-black-200 pb-lg-s-37">
     <div class="container position-relative">
-      <img class="w-123 w-lg-349 position-absolute top-0 start-0 translate-middle-y mb-lg-s-10 ms-s-11 ms-lg-s-0" src="../assets/images/title-buy 起來.png" alt="">
-      <div class="row position-relative pt-s-15 pt-lg-s-30 mb-s-8 mb-lg-s-20">
+      <img class="title-img w-123 w-lg-349 position-absolute start-0  ms-s-6 translate-middle-y mb-lg-s-10 ms-lg-s-0" src="../assets/images/title-buy 起來.png" alt="">
+      <div class="row position-relative pt-lg-s-30 mb-s-8 mb-lg-s-20">
         <h3 class="text-center">
           <span class="line title">健</span>
           <span class="line title">康</span>
@@ -231,7 +230,7 @@
           <span class="line title">評</span>
         </h3>
 
-        <div class="col-lg-4 mb-s-5 mb-lg-s-0">
+        <div class="col-lg-4 col-md-4 mb-s-5 mb-lg-s-0">
           <div class="card h-100 shadow border-0">
             <img src="../assets/images/feedback1.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -256,7 +255,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-s-5 mb-lg-s-0">
+        <div class="col-lg-4 col-md-4 mb-s-5 mb-lg-s-0">
           <div class="card h-100 shadow border-0">
             <img src="../assets/images/feedback2.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -281,7 +280,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-s-5 mb-lg-s-0">
+        <div class="col-lg-4 col-md-4 mb-s-5 mb-lg-s-0">
           <div class="card h-100 shadow border-0">
             <img src="../assets/images/feedback3.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -317,6 +316,8 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../assets/js/index.js"></script>
   <script type="module" src="../main.js"></script>
   <script type="module" src="../assets/js/index.js"></script>
   <script>

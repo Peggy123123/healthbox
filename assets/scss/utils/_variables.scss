@@ -286,6 +286,16 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+
+// scss-docs-start theme-color-variables
 $primary: #E07507;//$blue !default;
 $secondary: #F4E4B7;//$gray-600 !default;
 $secondary-light: #FEF9ED;
@@ -421,6 +431,18 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
+// $spacer: 1rem !default;
+// $spacers: (
+//   0: 0,
+//   1: $spacer * .25,
+//   2: $spacer * .5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+// ) !default;
+// scss-docs-end spacer-variables-maps
+
+// scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: ( /* custom */
   0: 0,
@@ -442,11 +464,16 @@ $spacers: ( /* custom */
   "s-9": 36px,
   "s-10": 40px,
   "s-11": 44px,
+  "s-12": 48px,
+  "s-13": 52px,
   "s-14": 56px,
   "s-15": 60px,
+  "s-16": 64px,
+  "s-17": 68px,
+  "s-18": 72px,
+  "s-19": 76px,
   "s-20": 80px,
   "s-30": 120px,
-  "s-37": 137px
   ) !default;
 // scss-docs-end spacer-variables-maps
 

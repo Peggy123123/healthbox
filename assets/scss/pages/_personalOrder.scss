@@ -65,7 +65,7 @@
     top:50%
 }
 
-@media (min-width: 768px){
+@include pad-up{
     .swiper-food {
         display: block;
     }
@@ -140,7 +140,12 @@
 }
 
 .circle-btn-personal {
-    margin-left: -20px;
+    @include pad-down{
+        margin-left: -20px;
+    }
+    @include pad-up{
+        margin-left: 0;
+    }
     transition: 0.2s;
 }
 
@@ -191,10 +196,6 @@
 .start-shop-btn-lg {
     display: none;
 }
-// .add-cart-box {
-//     display: none;
-// }
-
 
 @media (min-width: 768px){
     .start-shop-btn-sm {
@@ -206,9 +207,6 @@
     .start-shop-btn-lg {
         display: block;
     }
-    // .add-cart-box {
-    //     display: block;
-    // }
 }
 
 .show {
@@ -218,5 +216,11 @@
 @media (min-width: 768px){
     .show {
         display: block;
+    }
+}
+
+.foodClass-lg {
+    @include pad-down {
+        display: none;
     }
 }

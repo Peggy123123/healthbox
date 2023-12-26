@@ -31,27 +31,21 @@
   white-space: nowrap;
 }
 
-// .sup-text{
-//   font-size: 14px;
-//   @include media-breakpoint-up(md) {
-//       font-size: 14px;
-//   }
-//   @include media-breakpoint-up(lg) {
-//       font-size: 16px;
-//   }
-// }
+//斷點mixin
+@mixin pad-up {
+  @media (min-width:768px) {
+    @content
+  }
+};
 
-// .desktop-img {
-//   display: none !important;
-//   @include media-breakpoint-up(md){
-//     display: block !important;
-//   }
-// }
+@mixin desktop-up {
+  @media (min-width:992px) {
+    @content
+  }
+};
 
-// .mobile-img {
-//   display: block !important;
-//   @include media-breakpoint-up(md){
-//     display: none !important;
-//   }
-// }
-
+@mixin pad-down {
+  @media (max-width:767px) {
+    @content
+  }
+}

@@ -1,7 +1,6 @@
 //訂餐流程
 const cartContainerSm  = document.querySelector('.cart-container-sm');
 const personalOrderlSm = document.getElementById('personalOrderlSm'); //手機版選擇門市
-const storeName = document.querySelector('.store-name'); //分店名稱
 
 //載入手機版選擇門市畫面
 function init() {
@@ -105,11 +104,11 @@ watchCart.addEventListener('click',e=>{
             購物車內容 
              <div>
               <h3 class="text-center">你的訂單<span class="store-name"></span></h3>
-              <ul class="mt-5">
+              <ul class="mt-5 ps-0">
                 <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
                   <img src="../assets/images/bento 1.png" alt="Photo" class="w-25">
                   <div class="d-flex flex-column justify-content-evenly">
-                    <p>雞胸肉燕麥餐</p>
+                    <p style="width:100px">雞胸肉燕麥餐</p>
                     <div class="d-flex justify-content-between">
                       <button class="border-0 rounded-circle bg-primary">
                         <i class="fa-solid fa-minus  text-white"></i>
@@ -129,7 +128,7 @@ watchCart.addEventListener('click',e=>{
                 <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
                   <img src="../assets/images/bento 2.png" alt="Photo" class="w-25">
                   <div class="d-flex flex-column justify-content-evenly">
-                    <p>力量源泉牛小排餐</p>
+                    <p style="width:100px">力量源泉牛小排餐</p>
                     <div class="d-flex justify-content-between">
                       <button class="border-0 rounded-circle bg-primary">
                         <i class="fa-solid fa-minus  text-white"></i>
@@ -192,12 +191,12 @@ watchCart.addEventListener('click',e=>{
           </div>
           <!-- 購物車內容 -->
           <div>
-            <h3 class="text-center">你的訂單 (台北信義店)</h3>
-            <ul class="mt-5">
+            <h3 class="text-center">你的訂單<span class="store-name"></span></h3>
+            <ul class="mt-5 ps-0">
               <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
                 <img src="../assets/images/bento 1.png" alt="Photo" class="w-25">
                 <div class="d-flex flex-column justify-content-evenly">
-                  <p>雞胸肉燕麥餐</p>
+                  <p style="width:100px">雞胸肉燕麥餐</p>
                   <div class="d-flex justify-content-between">
                     <button class="border-0 rounded-circle bg-primary">
                       <i class="fa-solid fa-minus  text-white"></i>
@@ -217,7 +216,7 @@ watchCart.addEventListener('click',e=>{
               <li class="col-11 mx-auto d-flex justify-content-evenly mb-3">
                 <img src="../assets/images/bento 2.png" alt="Photo" class="w-25">
                 <div class="d-flex flex-column justify-content-evenly">
-                  <p>力量源泉牛小排餐</p>
+                  <p style="width:100px">力量源泉牛小排餐</p>
                   <div class="d-flex justify-content-between">
                     <button class="border-0 rounded-circle bg-primary">
                       <i class="fa-solid fa-minus  text-white"></i>
@@ -260,15 +259,19 @@ watchCart.addEventListener('click',e=>{
       const cartClose = document.querySelector('.close'); //叉叉按鈕
     cartClose.addEventListener('click',e=>{
         cartContainerSm.innerHTML =``
-    }); 
+    });
+    const storeName = document.querySelector('.store-name');
+    storeName.textContent = `(${StoreData.store})`
 });
 
-const cartContainerLg = document.querySelector('.cart-container-lg');
+//========================以下是電腦版設定
+
 //監聽電腦版選擇門市按鈕
 const startShopBtnLg = document.querySelector('.start-shop-btn-lg');
 const addCartBoxLg = document.querySelector('.add-cart-box-lg')
 
 startShopBtnLg.addEventListener('click',e=>{
+  e.preventDefault();
     addCartBoxLg.classList.remove('d-none');
     addCartBoxLg.classList.add('show');
     getStoreDataLg()
@@ -277,22 +280,23 @@ startShopBtnLg.addEventListener('click',e=>{
 //取得所選門市資料
 const copyLinkLg = document.querySelector('.copy-link-lg');
 
+let StoreDataLg={};
 function getStoreDataLg(){
     const startOrderBtnLg = document.querySelector('.start-order-btn-lg');
     startOrderBtnLg.addEventListener('click',e=>{
         e.preventDefault();
-        StoreData.store = document.querySelector('.form-select').value;
-        StoreData.form = document.querySelector('.form-check-input[name="flexRadioDefault"]:checked').value;
-        console.log(StoreData);
-        if(StoreData.form === '個人訂餐'){
+        StoreDataLg.store = document.querySelector('.form-selectLg').value;
+        StoreDataLg.form = document.querySelector('.form-check-input[name="flexRadioDefault"]:checked').value;
+        console.log(StoreDataLg);
+        if(StoreDataLg.form === '個人訂餐'){
           addCartBoxLg.classList.add('d-none');
           addCartBtnGLg();
-        }else if(StoreData.form === '揪團訂餐'){
+        }else if(StoreDataLg.form === '揪團訂餐'){
           copyLinkLg.classList.remove('d-none')
           addCartBoxLg.classList.add('d-none');
         };
         const startOrderBtnA = document.querySelector('.start-order-btn-a');
-        if(StoreData.form === '揪團訂餐'){
+        if(StoreDataLg.form === '揪團訂餐'){
             startOrderBtnA.addEventListener('click',e=>{
               copyLinkLg.classList.add('d-none');
               addCartBtnGLg();
@@ -307,4 +311,42 @@ const cartNumLg = document.querySelector('.cart-num-lg');
 function  addCartBtnGLg(){
   startShopBtnLg.classList.add('d-none');
   watchCartLg.classList.remove('d-none');
+  addCartBtnGoLg()
 }
+
+//監聽所有加入購物車按鈕
+
+function addCartBtnGoLg(){
+    addCartBtn.forEach(item=>{
+        item.addEventListener('click',e=>{
+          e.preventDefault();
+            cartData.food = e.target.getAttribute('data-id');
+            cartData.num ++;
+            cartNumLg.textContent = `(${cartData.num})`
+        })
+    })
+};
+
+const personalCartLg = document.querySelector('.personal-cart-lg');
+const groupCartLg = document.querySelector('.group-cart-lg');
+const storeName = document.querySelectorAll('.store-name'); //分店名稱
+storeNameArr =  {...storeName};
+watchCartLg.addEventListener('click',e=>{
+  e.preventDefault();
+  if(StoreDataLg.form === '個人訂餐'){
+    storeNameArr[0].textContent = `(${StoreDataLg.store})`
+    personalCartLg.classList.remove('d-none')
+  }else if(StoreDataLg.form === '揪團訂餐'){
+    storeNameArr[1].textContent = `(${StoreDataLg.store})`
+    groupCartLg.classList.remove('d-none')
+  }
+})
+
+const cartLgCloseBtn = document.querySelectorAll('.fa-angles-right');
+cartLgCloseBtn.forEach(item=>{
+  item.addEventListener('click',e=>{
+    e.preventDefault();
+    personalCartLg.classList.add('d-none')
+    groupCartLg.classList.add('d-none')
+  })
+})

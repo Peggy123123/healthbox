@@ -1,4 +1,4 @@
-$(function () {
+function init() {
 
   // 設定 AOS
   // 全局設定：
@@ -19,9 +19,9 @@ $(function () {
   // mirror: 元素是否應在滾動過它們時執行動畫。
   // anchorPlacement: 定義元素相對於窗口的哪個位置應觸發動畫。
   AOS.init({
-    // once: true,
+    once: false,
   });
-   
+
   var swiper = new Swiper('.heroSwiper', {
     pagination: {
       el: '.swiper-pagination',
@@ -64,4 +64,7 @@ $(function () {
       prevEl: '.buy-swiper-button-prev',
     },
   });
-});
+}
+
+
+init();
