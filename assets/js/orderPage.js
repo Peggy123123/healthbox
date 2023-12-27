@@ -34,6 +34,10 @@ function init() {
 }
 init()
 
+AOS.init({
+  once: true,
+});
+
 //取得所選門市資料
 let StoreData={};
 function getStoreData(){
@@ -286,7 +290,7 @@ function getStoreDataLg(){
     startOrderBtnLg.addEventListener('click',e=>{
         e.preventDefault();
         StoreDataLg.store = document.querySelector('.form-selectLg').value;
-        StoreDataLg.form = document.querySelector('.form-check-input[name="flexRadioDefault"]:checked').value;
+        StoreDataLg.form = document.querySelector('.form-check-input[name="flexRadioDefault2"]:checked').value;
         console.log(StoreDataLg);
         if(StoreDataLg.form === '個人訂餐'){
           addCartBoxLg.classList.add('d-none');
@@ -349,4 +353,4 @@ cartLgCloseBtn.forEach(item=>{
     personalCartLg.classList.add('d-none')
     groupCartLg.classList.add('d-none')
   })
-})
+});

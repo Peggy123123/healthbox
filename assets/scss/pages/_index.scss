@@ -3,10 +3,6 @@
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
-    // @include media-breakpoint-up(md){
-    //   padding-left: 32px;
-    //   padding-right: 32px;
-    // }
     &:not(:last-child)::after{
       content:"";
       position: absolute;
@@ -237,4 +233,43 @@
   @include pad-up{
     width: 26%;
   }
+}
+
+//跑馬燈
+//平板以上
+@keyframes eat-lg {
+  0%{
+    left: 45%;
+  }
+  100%{
+    left: -120%;
+  }
+}
+//平板以下
+@keyframes eat-sm {
+  0%{
+    left: 100%;
+  }
+  100%{
+    left: -120%;
+  }
+}
+
+.eat-container {
+  overflow: hidden;
+}
+
+.eat-img {
+  position: relative;
+  @include pad-up {
+    animation-name: eat-lg;
+  }
+  @include pad-down {
+    animation-name: eat-sm;
+  }
+  animation-duration: 80s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  transition-timing-function:linear;
+  animation-fill-mode: both;
 }

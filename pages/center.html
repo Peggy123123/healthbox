@@ -137,117 +137,125 @@
             </div>
         </div>
         <!-- 手機版訂單 -->
-        <div class="order-list-sm">
-            <div class="order-1 row justify-content-center fs-s-3">
-                <div class="col-10 d-flex justify-content-between bg-secondary p-s-3 fw-bold rounded align-items-center">
+        <div class="accordion order-list-sm" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     <div>
                         <span class="me-s-3">訂單編號</span>
                         <span>A123456777</span>
                     </div>
-                    <span><a href="#" class="text-primary"><i class="fa-solid fa-chevron-down"></i></a></span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <div class="order-1-content row justify-content-center pm-s-5 ">
+                            <div class="row">
+                                <div class="col-7 rounded">
+                                    <span class="me-s-3 bg-secondary p-s-1">訂單時間</span>
+                                    <span >2023.09.05 11:45</span>
+                                </div>
+                                <div class="col-5">
+                                    <span  class="me-s-3 bg-secondary p-s-1">類別</span>
+                                    <span>揪團訂餐</span>
+                                </div>
+                            </div>
+                            <div class="row py-s-3">
+                                <div class="col-7 rounded">
+                                    <span class="me-s-3 bg-secondary p-s-1">金額</span>
+                                    <span>NT$850</span>
+                                </div>
+                                <div class="col-5">
+                                    <span  class="me-s-3 bg-secondary p-s-1">付款狀態</span>
+                                    <span>現金結帳</span>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <span class="text-primary fw-bold mb-s-3">配送中</span>
+                            </div>
+                    </div>
                 </div>
+              </div>
             </div>
-            <div class="order-1-content row justify-content-center pm-s-5 d-none">
-                <div class="order-content col-10 border border-secondary fs-s-3" style="margin-top:-10px ;">
-                    <div class="row py-s-3 mt-s-3">
-                        <div class="col-7 rounded"> 
-                            <span class="me-s-3">訂單時間</span>
-                            <span>2023.09.05 11:45</span>
-                        </div>
-                        <div class="col-5">
-                            <span  class="me-s-3">類別</span>
-                            <span>揪團訂餐</span>
-                        </div>
-                    </div>
-                    <div class="row py-s-3">
-                        <div class="col-7 rounded"> 
-                            <span class="me-s-3">金額</span>
-                            <span>NT$850</span>
-                        </div>
-                        <div class="col-5">
-                            <span  class="me-s-3">付款狀態</span>
-                            <span>現金結帳</span>
-                        </div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center fs-s-4">
-                        <span class="text-primary fw-bold mb-s-3 fs-s-3">配送中</span>
-                    </div>
-                </div>
-            </div>
-            <div class="order-2 row justify-content-center fs-s-3 mt-s-2">
-                <div class="col-10 d-flex justify-content-between bg-secondary p-s-3 fw-bold rounded align-items-center">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                     <div>
                         <span class="me-s-3">訂單編號</span>
-                        <span>A123456888</span>
+                        <span>A123456777</span>
                     </div>
-                    <span><a href="#" class="text-primary"><i class="fa-solid fa-chevron-down"></i></a></span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <div class="order-1-content row justify-content-center pm-s-5 ">
+                        <div class="row">
+                            <div class="col-7 rounded">
+                                <span class="me-s-3 bg-secondary p-s-1">訂單時間</span>
+                                <span >2023.09.05 11:45</span>
+                            </div>
+                            <div class="col-5">
+                                <span  class="me-s-3 bg-secondary p-s-1">類別</span>
+                                <span>個人訂餐</span>
+                            </div>
+                        </div>
+                        <div class="row py-s-3">
+                            <div class="col-7 rounded">
+                                <span class="me-s-3 bg-secondary p-s-1">金額</span>
+                                <span>NT$250</span>
+                            </div>
+                            <div class="col-5">
+                                <span  class="me-s-3 bg-secondary p-s-1">付款狀態</span>
+                                <span>現金結帳</span>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <span class="text-primary fw-bold mb-s-3">配送中</span>
+                        </div>
                 </div>
-            </div>
-            <div class="order-2-content row justify-content-center pm-s-5 d-none">
-                <div class="order-content col-10 border border-secondary fs-s-3" style="margin-top:-10px ;">
-                    <div class="row py-s-3 mt-s-3">
-                        <div class="col-7 rounded"> 
-                            <span class="me-s-3">訂單時間</span>
-                            <span>2023.09.05 11:45</span>
-                        </div>
-                        <div class="col-5">
-                            <span  class="me-s-3">類別</span>
-                            <span>	個人訂餐</span>
-                        </div>
-                    </div>
-                    <div class="row py-s-3">
-                        <div class="col-7 rounded"> 
-                            <span class="me-s-3">金額</span>
-                            <span>NT$250</span>
-                        </div>
-                        <div class="col-5">
-                            <span  class="me-s-3">付款狀態</span>
-                            <span>現金結帳</span>
-                        </div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center fs-s-4">
-                        <span class="text-primary fw-bold mb-s-3 fs-s-3">配送中</span>
-                    </div>
                 </div>
+              </div>
             </div>
-            <div class="order-3 row justify-content-center fs-s-3 mt-s-2">
-                <div class="col-10 d-flex justify-content-between bg-secondary p-s-3 fw-bold rounded align-items-center">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                     <div>
                         <span class="me-s-3">訂單編號</span>
-                        <span>A123456999</span>
+                        <span>A123456777</span>
                     </div>
-                    <span><a href="#" class="text-primary"><i class="fa-solid fa-chevron-down"></i></a></span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <div class="order-1-content row justify-content-center pm-s-5 ">
+                        <div class="row">
+                            <div class="col-7 rounded">
+                                <span class="me-s-3 bg-secondary p-s-1">訂單時間</span>
+                                <span >2023.09.05 11:45</span>
+                            </div>
+                            <div class="col-5">
+                                <span  class="me-s-3 bg-secondary p-s-1">類別</span>
+                                <span>線上超市</span>
+                            </div>
+                        </div>
+                        <div class="row py-s-3">
+                            <div class="col-7 rounded">
+                                <span class="me-s-3 bg-secondary p-s-1">金額</span>
+                                <span>NT$1000</span>
+                            </div>
+                            <div class="col-5">
+                                <span  class="me-s-3 bg-secondary p-s-1">付款狀態</span>
+                                <span>信用卡</span>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <span class="text-primary fw-bold mb-s-3">已配達</span>
+                        </div>
                 </div>
-            </div>
-            <div class="order-3-content row justify-content-center pm-s-5 d-none">
-                <div class="order-content col-10 border border-secondary fs-s-3" style="margin-top:-10px ;">
-                    <div class="row py-s-3 mt-s-3">
-                        <div class="col-7 rounded"> 
-                            <span class="me-s-3">訂單時間</span>
-                            <span>2023.09.05 11:45</span>
-                        </div>
-                        <div class="col-5">
-                            <span  class="me-s-3">類別</span>
-                            <span>	上超市</span>
-                        </div>
-                    </div>
-                    <div class="row py-s-3">
-                        <div class="col-7 rounded"> 
-                            <span class="me-s-3">金額</span>
-                            <span>NT$1000</span>
-                        </div>
-                        <div class="col-5">
-                            <span  class="me-s-3">付款狀態</span>
-                            <span>信用卡</span>
-                        </div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center fs-s-4">
-                        <span class="text-primary fw-bold mb-s-3 fs-s-3">已配達</span>
-                    </div>
                 </div>
+              </div>
             </div>
-        </div>
-
+          </div>
     </div>
     <div class="footer-shadow">
         <div class="container pt-s-5">
@@ -255,5 +263,6 @@
         </div>
     </div>
     <script src="../assets/js/center.js"></script>
+    <script type="module" src="../main.js"></script>
 </body>
 </html>

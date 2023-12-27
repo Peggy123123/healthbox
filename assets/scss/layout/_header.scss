@@ -17,3 +17,16 @@ h1 {
 .nav-item {
   white-space:nowrap  //文字不換行
 }
+
+.nav-member {
+  @include pad-down{
+    .fa-user {
+      display: none;
+    }
+  }
+  @include pad-up {
+    .text {
+      display: none;
+    }
+  }
+}
